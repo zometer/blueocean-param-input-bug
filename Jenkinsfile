@@ -7,6 +7,11 @@ pipeline {
         sh 'env'
       }
     }
+    stage('Complete') {
+      steps {
+        sh 'env'
+      }
+    }
   }
   parameters {
     choice(choices: '''CI
